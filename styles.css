@@ -1,0 +1,83 @@
+@font-face {
+    src: url("fonts/TiltNeon-Regular.ttf");
+    font-family: TiltNeon;
+}
+
+:root {
+    --main-info-color: #98FB98;
+}
+
+#top {
+    display: flex;
+    justify-content: center;
+    max-height: 150px;
+}
+
+#photo {
+    border-radius: 10%;
+    width: 130px;
+    height: 150px;
+}
+
+#main-info {
+    background: linear-gradient(to right, transparent 0%, var(--main-info-color) 40%);
+    width: 600px;
+    height: 150px;
+    position: relative; /* Needed for positioning pseudo-element */
+}
+
+#main-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 10px;
+    height: 100%;
+    background-color: transparent;
+    z-index: -1;
+}
+
+#main-info::after {
+    content: "";
+    position: absolute;
+    border-radius: 10%;
+    top: 0;
+    right: -10px;
+    width: 130px;
+    height: 100%;
+    background-color: var(--main-info-color);
+    z-index: -2;
+}
+
+.info-part {
+    margin-left: 20px;
+}
+
+#name {
+    font-size: 1.6em;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+#job-title {
+    font-family: TiltNeon, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+
+#my-address {
+    font-size: 0.9em;
+    margin-bottom: -10px;
+}
+
+#contact {
+    display: flex;
+}
+
+#phone, #email {
+    font-size: 0.9em;
+}
+
+
