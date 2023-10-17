@@ -10,6 +10,8 @@
 #top {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    max-width: 600px;
     max-height: 150px;
 }
 
@@ -21,7 +23,7 @@
 
 #main-info {
     background: linear-gradient(to right, transparent 0%, var(--main-info-color) 40%);
-    width: 600px;
+    width: 450px;
     height: 150px;
     position: relative; /* Needed for positioning pseudo-element */
 }
@@ -78,6 +80,30 @@
 
 #phone, #email {
     font-size: 0.9em;
+}
+
+.grid-container {
+    display: grid;
+    max-width: 560px;
+    margin: 10px auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat(3, 1fr) repeat(5, minmax(50px, auto));
+}
+
+.left {
+    grid-column: 1;
+    background-color: aqua;
+}
+
+.right {
+    grid-column: 2;
+    background-color: gold;
+}
+
+#interview {
+    display: block;
+    margin: 15px auto;
 }
 
 
