@@ -3,9 +3,33 @@
     font-family: TiltNeon;
 }
 
+@font-face {
+    src: url("fonts/Raleway-Regular.ttf");
+    font-family: Raleway;
+}
+
 :root {
     --main-info-color: #98FB98;
 }
+
+
+
+h3 {
+    font-family: Raleway, Helvetica, Arial, sans-serif;
+    font-size: 1.3em;
+    margin-bottom: -3px;
+}
+
+h4 {
+    margin-bottom: -1px;
+    font-size: 0.95em;
+}
+
+h5 {
+    margin-bottom: -5px;
+}
+
+
 
 #top {
     display: flex;
@@ -61,7 +85,6 @@
     margin-left: 20px;
 }
 
-
 #job-title {
     font-family: TiltNeon, Helvetica, Arial, sans-serif;
     font-size: 1em;
@@ -84,7 +107,7 @@
 
 #grid-container {
     display: grid;
-    grid-template-columns: 1fr 2.5fr;
+    grid-template-columns: 1fr 2.1fr;
     align-items: center;
     gap: 15px;
     max-width: 560px;
@@ -92,8 +115,10 @@
 }
 
 .left-column, .right-column {
-    margin: 10px auto;
-    background-color: #98FB98;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    /* margin: 10px auto; */
+    /* background-color: #98FB98; */
 }
 
 #interview {
