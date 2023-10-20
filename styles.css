@@ -82,28 +82,26 @@
     font-size: 0.9em;
 }
 
-.grid-container {
+#grid-container {
     display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    align-items: center;
+    gap: 15px;
     max-width: 560px;
+    margin: 15px auto;
+}
+
+.left-column, .right-column {
     margin: 10px auto;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    grid-template-rows: repeat(3, 1fr) repeat(5, minmax(50px, auto));
-}
-
-.left {
-    grid-column: 1;
-    background-color: aqua;
-}
-
-.right {
-    grid-column: 2;
-    background-color: gold;
+    background-color: #98FB98;
 }
 
 #interview {
     display: block;
-    margin: 15px auto;
+    margin: 0 auto;
 }
 
-
+#meetup {
+    display: block;
+    margin: 15px auto;
+}
