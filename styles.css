@@ -14,19 +14,12 @@
 
 
 
-h3 {
-    font-family: Raleway, Helvetica, Arial, sans-serif;
-    font-size: 1.3em;
-    margin-bottom: -3px;
+a {
+    text-decoration: none;
 }
 
-h4 {
-    margin-bottom: -1px;
-    font-size: 0.95em;
-}
-
-h5 {
-    margin-bottom: -5px;
+a:hover {
+    text-decoration: underline;
 }
 
 
@@ -105,10 +98,11 @@ h5 {
     font-size: 0.9em;
 }
 
+
+
 #grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    /*align-items: center;*/
     gap: 15px;
     max-width: 580px;
     margin: 15px auto;
@@ -119,12 +113,29 @@ h5 {
     margin-bottom: 40px;
 }
 
+.title {
+    font-family: Raleway, Helvetica, Arial, sans-serif;
+    font-size: 1.3em;
+    margin-bottom: -3px;
+}
+
+.mini-title {
+    margin-bottom: -1px;
+    font-size: 0.95em;
+}
+
+.sub-title {
+    margin-bottom: -5px;
+}
+
+
 
 #links-icon {
     height: 100px;
     width: 100px;
     margin-bottom: 10px;
 }
+
 .source-icon {
     height: 27px;
     width: 27px;
@@ -135,13 +146,7 @@ h5 {
     font-size: 1.1em;
 }
 
-a {
-    text-decoration: none;
-}
 
-a:hover {
-    text-decoration: underline;
-}
 
 .skill-container {
     width: 88%;
@@ -156,7 +161,6 @@ a:hover {
     padding-top: 2px;
     padding-bottom: 2px;
     font-size: 14px;
-
 }
 
 .skill-name {
@@ -191,6 +195,8 @@ a:hover {
     width: 70%;
 }
 
+
+
 #interview {
     display: block;
     margin: 0 auto;
@@ -202,7 +208,7 @@ a:hover {
     color: white;
     cursor: pointer;
     padding: 18px;
-    width: 560px;
+    width: 580px;
     border: none;
     text-align: left;
     outline: none;
@@ -220,12 +226,12 @@ a:hover {
     margin-left: 5px;
 }
 
-.active:after {
+.collapsible.active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
     color: white;
 }
 
-.active, .collapsible:hover {
+.collapsible.active, .collapsible:hover {
     background-color: #555;
 }
 
