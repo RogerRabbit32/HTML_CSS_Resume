@@ -8,7 +8,7 @@
 </head>
 <body>
     <header id="top">
-        <img id="photo" src="media/myphoto.jpg" alt="candidate's photo"></img>
+        <img id="photo" src="media/myphoto.jpg" alt="candidate's photo">
         <div id="main-info">
             <h1 id="name" class="info-part">Kirill Levin</h1>
             <p id="job-title" class="info-part">Junior Python developer</p>
@@ -23,22 +23,55 @@
     <main id="grid-container">
         <div class="left">
             <section class="left-section">
-                <img src="media/links-icon.png" id="links-icon">
+                <img src="media/links-icon.png" id="links-icon" alt="Links icon">
                 <div class="icon-link">
-                    <img src="media/github-icon.png" class="source-icon">
+                    <img src="media/github-icon.png" class="source-icon" alt="GitHub icon">
                     <a href="https://github.com/RogerRabbit32" target="_blank">GitHub</a>
                 </div>
                 <div class="icon-link">
-                    <img src="media/codewars-icon.png" class="source-icon">
+                    <img src="media/codewars-icon.png" class="source-icon" alt="CodeWars icon">
                     <a href="https://www.codewars.com/users/RogerRabbit32" target="_blank">CodeWars</a>
                 </div>
                 <div class="icon-link">
-                    <img src="media/leetcode-icon.png" class="source-icon">
+                    <img src="media/leetcode-icon.png" class="source-icon" alt="Leetcode icon">
                     <a href="https://leetcode.com/KirillLevin/" target="_blank">Leetcode</a>
                 </div>
             </section>
-            <section class="left-section">2</section>
-            <section class="left-section">3</section>
+            <section class="left-section">
+                <h3 class="title">Skills</h3>
+                <p class="skill-name">Python</p>
+                <div class="skill-container">
+                    <div class="skill python">75%</div>
+                </div>
+                <p class="skill-name">Django, DRF</p>
+                <div class="skill-container">
+                    <div class="skill django">70%</div>
+                </div>
+                <p class="skill-name">fastAPI</p>
+                <div class="skill-container">
+                    <div class="skill fastApi">35%</div>
+                </div>
+                <p class="skill-name">PostgreSQL</p>
+                <div class="skill-container">
+                    <div class="skill sql">25%</div>
+                </div>
+                <p class="skill-name">Docker</p>
+                <div class="skill-container">
+                    <div class="skill docker">25%</div>
+                </div>
+                <p class="skill-name">HTML + CSS</p>
+                <div class="skill-container">
+                    <div class="skill html">55%</div>
+                </div>
+                <p class="skill-name">Git</p>
+                <div class="skill-container">
+                    <div class="skill git">70%</div>
+                </div>
+            </section>
+            <section class="left-section">
+                <h3 class="title">Hobbies</h3>
+                <p>Chess, Mixed martial arts</p>
+            </section>
         </div>
         <div class="right">
             <section class="right-section">
@@ -79,10 +112,12 @@
 
 
     <iframe id="interview" width="560" height="315" src="https://www.youtube.com/embed/PFZZHi80YLA?si=RIOf7Swq3q7Hy5WL"
-            title="YouTube video player" frameborder="0"
+            title="YouTube video player"
+            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen>
     </iframe>
+    <button type="button" class="collapsible">One more video</button>
     <iframe id="meetup" width="560" height="315"
             src="https://www.youtube.com/embed/MJV4T98CxyM?si=tjcaGFTUAJ3yngvo&amp;start=4950"
             title="YouTube video player"
@@ -90,5 +125,22 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen>
     </iframe>
+
+    <script>
+        const button = document.querySelector(".collapsible");
+        const iframe = document.getElementById("meetup");
+
+        button.addEventListener("click", function() {
+            event.preventDefault();
+
+            if (iframe.style.display === "block") {
+                iframe.style.display = "none";
+            } else {
+                iframe.style.display = "block";
+            }
+            // Toggle the "active" class on the button
+            button.classList.toggle("active");
+        })
+    </script>
 </body>
 </html>
