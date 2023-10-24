@@ -8,6 +8,38 @@
     font-family: Raleway;
 }
 
+
+
+@media (max-width: 600px) {
+    #top {
+        max-width: 100%;
+    }
+
+    #photo {
+        width: 100px; /* Adjust the size as needed */
+    }
+
+    #main-info {
+        width: 100%;
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    .left-section, .right-section {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .collapsible {
+        width: 100%; /* Adjust the width as needed */
+    }
+
+    #interview, #meetup {
+        width: 100%; /* Adjust the width as needed */
+    }
+}
+
+
+
 :root {
     --main-info-color: #98FB98;
 }
