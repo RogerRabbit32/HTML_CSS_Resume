@@ -249,8 +249,9 @@ a:hover {
 @media screen and (max-width: 1000px) {
     #top {
         width: 100%;
+        max-width: 100%;
         margin: 15px 0;
-        max-height: 200px;
+        max-height: 300px;
     }
 
     #main-info {
@@ -260,6 +261,7 @@ a:hover {
 
     #grid-container {
         width: 100%;
+        max-width: 100%;
     }
 
     .left-section, .right-section {
