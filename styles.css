@@ -247,6 +247,13 @@ a:hover {
 
 
 @media screen and (max-width: 1000px) {
+
+    body {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 1.5em;
+    }
+
     #top {
         width: 100%;
         max-width: 100%;
