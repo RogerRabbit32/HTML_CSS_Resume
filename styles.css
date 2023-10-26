@@ -12,6 +12,7 @@
 
 @media screen and (max-width: 1000px) {
     #top {
+        width: 100%;
         max-width: 100%;
     }
 
@@ -21,6 +22,7 @@
 
     #main-info {
         width: 100%;
+        max-width: 100%;
         padding: 10px; /* Add padding for better spacing */
     }
 
@@ -31,6 +33,7 @@
 
     .collapsible {
         width: 100%;
+        max-width: 100%;
         margin: 15px 0;
     }
 
