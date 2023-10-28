@@ -258,7 +258,7 @@ a:hover {
         width: 100%;
         max-width: 100%;
         margin: 15px 0;
-        max-height: 30%;
+        max-height: 500px;
     }
 
     #main-info {
@@ -272,6 +272,7 @@ a:hover {
 
     .left {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
 
