@@ -258,13 +258,19 @@ a:hover {
         width: 100%;
         max-width: 100%;
         margin: 15px 0;
-        height: 250px;
+        height: 210px;
+    }
+
+    #photo {
+        width: 180px;
+        height: 210px;
     }
 
     #main-info {
         width: 100%;
         padding: 10px;
-        height: 250px;
+        height: 210px;
+        font-size: 1.2em;
     }
 
     #grid-container {
@@ -287,6 +293,10 @@ a:hover {
         height: 80px;
         margin: 15px 0;
         font-size: 1.2em;
+    }
+
+    .collapsible:after {
+        font-size: 17px;
     }
 
     #interview, #meetup {
