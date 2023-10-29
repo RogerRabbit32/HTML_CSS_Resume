@@ -30,7 +30,7 @@ a:hover {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 580px;
     max-height: 150px;
 }
 
@@ -45,31 +45,20 @@ a:hover {
     flex-grow: 1;
     height: 150px;
     border-radius: 15px;
-    /*position: relative; !* Needed for positioning pseudo-element *!*/
+    position: relative; /* Needed for positioning pseudo-element */
 }
 
-/*#main-info::before {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: -10px;*/
-/*    width: 10px;*/
-/*    height: 100%;*/
-/*    background-color: transparent;*/
-/*    z-index: -1;*/
-/*}*/
+#main-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 10px;
+    height: 100%;
+    background-color: transparent;
+    z-index: -1;
+}
 
-/*#main-info::after {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    border-radius: 10%;*/
-/*    top: 0;*/
-/*    right: -10px;*/
-/*    width: 130px;*/
-/*    height: 100%;*/
-/*    background-color: var(--main-info-color);*/
-/*    z-index: -1;*/
-/*}*/
 
 .info-part {
     margin-left: 20px;
