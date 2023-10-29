@@ -42,33 +42,34 @@ a:hover {
 
 #main-info {
     background: linear-gradient(to right, transparent 0%, var(--main-info-color) 40%);
-    width: 550px;
+    flex-grow: 1;
     height: 150px;
-    position: relative; /* Needed for positioning pseudo-element */
+    border-radius: 15px;
+    /*position: relative; !* Needed for positioning pseudo-element *!*/
 }
 
-#main-info::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -10px;
-    width: 10px;
-    height: 100%;
-    background-color: transparent;
-    z-index: -1;
-}
+/*#main-info::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: -10px;*/
+/*    width: 10px;*/
+/*    height: 100%;*/
+/*    background-color: transparent;*/
+/*    z-index: -1;*/
+/*}*/
 
-#main-info::after {
-    content: "";
-    position: absolute;
-    border-radius: 10%;
-    top: 0;
-    right: -10px;
-    width: 130px;
-    height: 100%;
-    background-color: var(--main-info-color);
-    z-index: -1;
-}
+/*#main-info::after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    border-radius: 10%;*/
+/*    top: 0;*/
+/*    right: -10px;*/
+/*    width: 130px;*/
+/*    height: 100%;*/
+/*    background-color: var(--main-info-color);*/
+/*    z-index: -1;*/
+/*}*/
 
 .info-part {
     margin-left: 20px;
