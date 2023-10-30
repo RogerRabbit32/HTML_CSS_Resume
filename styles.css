@@ -270,7 +270,7 @@ a:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 3px;
+        /*margin-top: 3px;*/
     }
 
     .left-section, .right-section {
