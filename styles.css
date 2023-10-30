@@ -261,7 +261,7 @@ a:hover {
         width: 100%;
         padding: 10px;
         height: 210px;
-        font-size: 0.9em;
+        /*font-size: 0.9em;*/
     }
 
     #grid-container {
