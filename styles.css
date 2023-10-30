@@ -249,7 +249,6 @@ a:hover {
         max-width: 100%;
         margin: 15px 0;
         max-height: 210px;
-        height: 210px;
     }
 
     #photo {
@@ -261,7 +260,6 @@ a:hover {
         width: 100%;
         padding: 10px;
         height: 210px;
-        /*font-size: 0.9em;*/
     }
 
     #grid-container {
@@ -272,6 +270,7 @@ a:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-top: 3px;
     }
 
     .left-section, .right-section {
