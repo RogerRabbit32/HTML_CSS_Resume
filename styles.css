@@ -43,7 +43,6 @@ a:hover {
 #main-info {
     background: linear-gradient(to right, transparent 0%, var(--main-info-color) 40%);
     flex-grow: 1;
-    height: 150px;
     border-radius: 15px;
     /*position: relative; !* Needed for positioning pseudo-element *!*/
 }
@@ -263,7 +262,6 @@ a:hover {
     #main-info {
         width: 100%;
         padding: 10px;
-        height: 230px;
     }
 
     #grid-container {
