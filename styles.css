@@ -248,7 +248,7 @@ a:hover {
         width: 100%;
         max-width: 100%;
         margin: 15px 0;
-        max-height: 210px;
+        max-height: 230px;
     }
 
     #photo {
@@ -259,7 +259,7 @@ a:hover {
     #main-info {
         width: 100%;
         padding: 10px;
-        height: 230px;
+        /*height: 230px;*/
     }
 
     #grid-container {
