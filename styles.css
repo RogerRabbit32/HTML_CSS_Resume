@@ -276,8 +276,8 @@ a:hover {
         margin-bottom: 20px;
     }
 
-    .left-section {
-        margin-top: 3px;
+    .title {
+        margin-bottom: 0;
     }
 
     .collapsible {
